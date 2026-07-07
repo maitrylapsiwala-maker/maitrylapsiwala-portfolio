@@ -509,6 +509,40 @@ h2 {
   line-height:1.6;
 }
 
+
+.resume-summary {
+  display:grid;
+  gap:14px;
+  margin:28px 0 4px;
+}
+.resume-summary div {
+  background:rgba(255,255,255,.64);
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:18px 20px;
+}
+.resume-summary span {
+  display:block;
+  color:var(--gold);
+  font-size:11px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  font-weight:700;
+  margin-bottom:8px;
+}
+.resume-summary strong {
+  display:block;
+  font-family:Georgia, "Times New Roman", serif;
+  font-size:22px;
+  font-weight:400;
+  letter-spacing:-.02em;
+}
+.resume-summary p {
+  margin:6px 0 0;
+  color:var(--muted);
+  line-height:1.55;
+}
+
 </style>
 </head>
 <body>
@@ -631,7 +665,25 @@ h2 {
     <div>
       <p class="kicker">Resume</p>
       <h2>Education, awards, and technical strengths.</h2>
-      <p class="lead">A resume-forward section lets hiring managers quickly understand Maitry’s academic background, design experience, and technical capabilities.</p>
+      
+      <div class="resume-summary">
+        <div>
+          <span>Education</span>
+          <strong>Master of Architecture</strong>
+          <p>University of Texas at San Antonio</p>
+        </div>
+        <div>
+          <span>Experience</span>
+          <strong>Spaces Designed · HPA · Vaaste</strong>
+          <p>Design, documentation, visualization, and coordination</p>
+        </div>
+        <div>
+          <span>Software</span>
+          <strong>Revit · AutoCAD · Rhino</strong>
+          <p>Enscape, Lumion, V-Ray, Adobe Creative Suite</p>
+        </div>
+      </div>
+
       <div class="actions">
         <a class="btn gold" href="Maitry_Lapsiwala_Resume.pdf" download>Download PDF Resume</a>
         <a class="btn light" style="color:var(--ink);border-color:var(--line)" href="mailto:maitrylapsiwala@gmail.com">Email Maitry</a>
